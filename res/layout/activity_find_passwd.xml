@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.homework.FindPassword"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/find_password_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="邮箱：" 
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/editText_find_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/find_password_email"
+        android:layout_alignBottom="@+id/find_password_email"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="请输入邮箱">
+    </EditText>
+
+    <Button
+        android:id="@+id/find_database"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_password_email"
+        android:layout_below="@+id/find_password_email"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:text="找回密码" />
+
+    <TextView
+        android:id="@+id/show_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/find_database"
+        android:layout_below="@+id/find_database"
+        android:layout_marginTop="64dp"
+        android:text="" 
+        android:textSize="30sp"/>
+    
+</RelativeLayout>

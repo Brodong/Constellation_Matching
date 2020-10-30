@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.homework.Result" >
+
+    <Button
+        android:id="@+id/button_myConstellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="97dp"
+        android:background="@drawable/button2"
+        android:text=""
+        android:textSize="28sp" />
+
+    <Button
+        android:id="@+id/button_hisConstellation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_myConstellation"
+        android:layout_alignBottom="@+id/button_myConstellation"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/button2"
+        android:text=""
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textView_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button_myConstellation"
+        android:layout_below="@+id/button_myConstellation"
+        android:layout_marginTop="83dp"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button_hisConstellation"
+        android:layout_alignBottom="@+id/button_hisConstellation"
+        android:layout_centerHorizontal="true"
+        android:text="VS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0000"
+        android:textSize="25sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/button_myConstellation"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_toRightOf="@+id/button_myConstellation"
+        android:background="#FF0000" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        android:layout_alignBottom="@+id/button_myConstellation"
+        android:layout_marginBottom="25dp"
+        android:layout_toLeftOf="@+id/button_hisConstellation"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="#FF0000" />
+
+
+</RelativeLayout>
